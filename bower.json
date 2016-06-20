@@ -6,7 +6,7 @@
     "stevenfogel <stevenfogel@berkeley.edu>"
   ],
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/zachrosen/coders",
   "ignore": [
     "**/.*",
     "node_modules",
