@@ -11,18 +11,19 @@
   <h3 class="hcenter">Add a task</h3>
   <div class="hcenter">
     <label>Task Description: </label>
-    <input type="text" value="">
+    <input type="text" value="" ng-model="vm.todo.description">
   </div>
   <div class="hcenter">
     <label>Completion Date: </label>
-    <input type="date" value="">
+    <input type="date" value="" ng-model="vm.todo.date">
   </div>
   <button type="submit" class="hcenter" name="button">Add</button>
 </form>
 <br>
 <br>
 <table class="hcenter" style="width: 500px">
-  <thead>
+<h3>Tasks to be Completed</h3>
+<thead>
     <tr>
       <td>Task</td>
       <td>Completion Date</td>
@@ -31,13 +32,14 @@
   </thead>
   <tbody>
     <tr>
-      <td></td>
-      <td></td>
+      <td>{{ vm.todo.description }}</td>
+      <td>{{ vm.todo.date }}</td>
       <td><input type="checkbox" name="name" value=""></td>
     </tr>
   </tbody>
 </table>
-<table>
+<table class="hcenter" style="width: 500px">
+  <h3>Completed Tasks</h3>
   <thead>
     <tr>
       <td>Task</td>
@@ -49,7 +51,7 @@
     <tr>
       <td></td>
       <td></td>
-      <td><input type="checkbox" name="name" value="checked"></td>
+      <td><input type="checkbox" name="name" value="" checked="true"></td>
     </tr>
   </tbody>
 </table>
