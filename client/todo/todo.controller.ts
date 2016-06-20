@@ -4,11 +4,11 @@ namespace app {
     public todo: ITodo;
 
     public createTodo(){
-      
+      this.TodoService.create(this.todo);
     }
 
     constructor(
-
+      private TodoService: app.TodoService
     ){
 
     }
