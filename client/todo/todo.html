@@ -5,7 +5,8 @@
     <title>Todo App</title>
     <link rel="stylesheet" href="/client/todo/todo.css">
   </head>
-  <form>
+  <body>
+  <form ng-submit="vm.createTodo()">
   <h1 class="hcenter">Todo List</h1>
   <h3 class="hcenter">Add a task</h3>
   <div class="hcenter">
@@ -18,6 +19,39 @@
   </div>
   <button type="submit" class="hcenter" name="button">Add</button>
 </form>
-  <body>
+<br>
+<br>
+<table class="hcenter" style="width: 500px">
+  <thead>
+    <tr>
+      <td>Task</td>
+      <td>Completion Date</td>
+      <td>Completed?</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td><input type="checkbox" name="name" value=""></td>
+    </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+    <tr>
+      <td>Task</td>
+      <td>Completion Date</td>
+      <td>Completed?</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td><input type="checkbox" name="name" value="checked"></td>
+    </tr>
+  </tbody>
+</table>
   </body>
 </html>
