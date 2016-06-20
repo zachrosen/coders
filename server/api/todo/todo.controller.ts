@@ -8,3 +8,10 @@ export function create(req: express.Request, res: express.Response, next: Functi
     res.json(t);
   })
 }
+
+export function getAll(req: express.Request, res: express.Response, next) {
+  Todo.find().select('').exec((err, todos) => {
+    if(err) return next(err);
+    res.json(todos);
+  })
+}

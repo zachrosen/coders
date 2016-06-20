@@ -36,9 +36,9 @@
     </tr>
   </thead>
   <tbody class="hcenter">
-    <tr>
-      <td>{{ vm.todo.description }}</td>
-      <td>{{ vm.todo.date }}</td>
+    <tr ng-repeat="t in vm.todoArr">
+      <td>{{ t.description }}</td>
+      <td>{{ t.date }}</td>
       <td><input type="checkbox" name="name" value=""></td>
     </tr>
   </tbody>
