@@ -5,6 +5,7 @@ namespace app {
 
     public createTodo(){
       this.TodoService.create(this.todo);
+      console.log(this.todo);
     }
 
     constructor(
