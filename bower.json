@@ -1,0 +1,17 @@
+{
+  "name": "coders",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "stevenfogel <stevenfogel@berkeley.edu>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
