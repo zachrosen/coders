@@ -11,6 +11,10 @@ namespace app {
       return this.TodoResource.save(todo).$promise;
     }
 
+    public getAll() {
+      return this.TodoResource.query();
+    }
+
     constructor(
       private $resource: ng.resource.IResourceService
     ) {

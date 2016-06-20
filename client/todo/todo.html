@@ -35,10 +35,17 @@
       <td>Completed?</td>
     </tr>
   </thead>
+<<<<<<< HEAD
   <tbody class="hcenter" ng-repeat="vm.todo">
     <tr>
       <td>{{ vm.todo.description }}</td>
       <td>{{ vm.todo.date | date: 'fullDate'}}</td>
+=======
+  <tbody class="hcenter">
+    <tr ng-repeat="t in vm.todoArr">
+      <td>{{ t.description }}</td>
+      <td>{{ t.date }}</td>
+>>>>>>> b36dc01511055390abeb1632a7854df8773aa02d
       <td><input type="checkbox" name="name" value=""></td>
     </tr>
   </tbody>
