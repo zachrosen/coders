@@ -1,6 +1,11 @@
 namespace app {
 
   export class TodoController{
+    public todo: ITodo;
+
+    public createTodo(){
+      
+    }
 
     constructor(){
 
