@@ -1,6 +1,6 @@
 namespace app {
 
-  import class TodoController{
+  export class TodoController{
 
     constructor(){
 
