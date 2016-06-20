@@ -4,22 +4,23 @@
 <head>
     <meta charset="utf-8">
     <title>Index</title>
+    <base href="/">
     <link rel="stylesheet" href="http://bootswatch.com/slate/bootstrap.min.css">
 </head>
 
 <body>
+  <div ui-view="" id="content"></div>
 
-    <script src="/bower_components/angular/angular.min.js"></script>
-    <script src="/bower_components/angular-resource/angular-resource.min.js"></script>
-    <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 
+  <script src="client/shared/module.js"></script>
+  <script src="client/todo/todo.module.js"></script>
 
-    <script src="/client/todo/todo.service.js"></script>
+  <script src="client/todo/todo.service.js"></script>
 
-    <script src="/shared/module.js"></script>
-    <script src="/client/todo/todo.module.js"></script>
-
-    <script src="/client/todo/todo.controller.js"></script>
+  <script src="client/todo/todo.controller.js"></script>
 </body>
 
 </html>
